@@ -9,12 +9,12 @@ jobs:
         - name: Checkout Repo
           uses: actions/checkout@v4
         
-        - name: List and Read
-          run:
-            echo "My FIrst Github Actions Job"
-            ls -ltra
-            cat README.md
-
+        - name: List and Read file
+          run: |
+              echo "My FIrst Github Actions Job"
+              ls -lrea
+              cat REDAME.md
+          
         - name: ASCII Art
           run: cowsay -f dragon "Run for cover, I am a DRAGON....Fire" >> dragon.txt
 
