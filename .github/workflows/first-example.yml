@@ -12,7 +12,7 @@ jobs:
         - name: List and Read file
           run: |
               echo "My FIrst Github Actions Job"
-              ls -lrea
+              ls -ltra
               cat REDAME.md
           
         - name: ASCII Art
